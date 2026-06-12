@@ -5,50 +5,50 @@ import { ArrowRight, Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    description: "For individuals and small projects",
+    name: "Community",
+    description: "For individual developers and hobbyists",
     price: { monthly: 0, annual: 0 },
     features: [
-      "Up to 3 projects",
-      "1GB storage",
+      "Full open source access",
+      "Self-hosted deployment",
       "Community support",
-      "Basic analytics",
-      "SSL certificates",
+      "Access to all AI models",
+      "Unlimited API calls",
     ],
-    cta: "Start free",
+    cta: "Get Started",
     popular: false,
   },
   {
-    name: "Pro",
-    description: "For growing teams and businesses",
-    price: { monthly: 29, annual: 24 },
+    name: "Professional",
+    description: "For teams and production use",
+    price: { monthly: 49, annual: 39 },
     features: [
-      "Unlimited projects",
-      "100GB storage",
-      "Priority support",
-      "Advanced analytics",
-      "Custom domains",
-      "Team collaboration",
-      "API access",
+      "Everything in Community",
+      "Managed hosting included",
+      "Priority email support",
+      "Advanced monitoring & analytics",
+      "Custom model fine-tuning",
+      "Team collaboration tools",
+      "Dedicated API quotas",
     ],
-    cta: "Start trial",
+    cta: "Start Free Trial",
     popular: true,
   },
   {
     name: "Enterprise",
-    description: "For large-scale operations",
+    description: "For large-scale deployments",
     price: { monthly: null, annual: null },
     features: [
-      "Everything in Pro",
-      "Unlimited storage",
+      "Everything in Professional",
+      "Unlimited resources",
       "24/7 dedicated support",
-      "Custom integrations",
-      "SLA guarantee",
-      "On-premise option",
-      "Security audit",
+      "Custom infrastructure setup",
+      "SLA guarantees",
+      "On-premise deployment",
+      "Security & compliance audit",
       "Custom contracts",
     ],
-    cta: "Contact sales",
+    cta: "Contact Us",
     popular: false,
   },
 ];
@@ -65,12 +65,12 @@ export function PricingSection() {
             Pricing
           </span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground mb-6">
-            Simple, transparent
+            Transparent, fair
             <br />
             <span className="text-stroke">pricing</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl">
-            Start free and scale as you grow. No hidden fees, no surprises.
+            Start free with full open source access. Scale with our managed service or deploy yourself.
           </p>
         </div>
 
@@ -172,9 +172,9 @@ export function PricingSection() {
 
         {/* Bottom Note */}
         <p className="mt-12 text-center text-sm text-muted-foreground">
-          All plans include automatic updates, HTTPS, and DDoS protection.{" "}
+          All paid plans include automatic updates, 99.9% uptime SLA, and premium support.{" "}
           <a href="#" className="underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+            See full comparison
           </a>
         </p>
       </div>

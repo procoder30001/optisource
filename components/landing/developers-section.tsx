@@ -5,48 +5,43 @@ import { Copy, Check } from "lucide-react";
 
 const codeExamples = [
   {
-    label: "Install",
-    code: `npm install @optisource/sdk
-
-# or
-yarn add @optisource/sdk
-pnpm add @optisource/sdk`,
+    label: "Clone from GitHub",
+    code: `git clone https://github.com/optisource/ai
+cd optisource
+npm install`,
   },
   {
-    label: "Initialize",
+    label: "Load AI Models",
     code: `import { OptiSource } from '@optisource/sdk'
 
-const optisource = new OptiSource({
-  apiKey: process.env.OPTISOURCE_KEY
+const ai = new OptiSource({
+  model: 'llama-2',
+  quantized: true
 })`,
   },
   {
-    label: "Deploy",
-    code: `const app = await optisource.deploy({
-  name: 'my-app',
-  region: 'auto',
-  scaling: {
-    min: 1,
-    max: 100
-  }
-})
+    label: "Build & Deploy",
+    code: `npm run build
+npm run start
 
-console.log('Live at:', app.url)`,
+// Deploy to your own server
+// or use managed hosting
+// Complete control, zero lock-in`,
   },
 ];
 
 const features = [
   { 
-    title: "TypeScript native", 
-    description: "Full type safety with auto-generated types."
+    title: "Fully open source", 
+    description: "MIT licensed. Fork, modify, and contribute back to the community."
   },
   { 
-    title: "Zero config", 
-    description: "Sensible defaults that just work."
+    title: "Multiple backends", 
+    description: "Run on any AI model. Not locked to proprietary providers."
   },
   { 
-    title: "Edge-ready", 
-    description: "Runs anywhere: Node, Deno, Bun, browsers."
+    title: "Self-hosted first", 
+    description: "Deploy on your infrastructure. Your data stays with you."
   },
   { 
     title: "12KB gzipped", 

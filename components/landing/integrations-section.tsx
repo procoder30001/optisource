@@ -3,18 +3,18 @@
 import { useEffect, useState, useRef } from "react";
 
 const integrations = [
-  { name: "GitHub", category: "Version Control" },
-  { name: "Slack", category: "Communication" },
-  { name: "Stripe", category: "Payments" },
+  { name: "Llama", category: "AI Models" },
+  { name: "Mistral", category: "AI Models" },
+  { name: "Claude", category: "AI Models" },
   { name: "PostgreSQL", category: "Database" },
-  { name: "Redis", category: "Cache" },
-  { name: "AWS", category: "Cloud" },
   { name: "MongoDB", category: "Database" },
-  { name: "Vercel", category: "Hosting" },
-  { name: "Figma", category: "Design" },
-  { name: "Linear", category: "Project Management" },
-  { name: "Notion", category: "Documentation" },
-  { name: "OpenAI", category: "AI/ML" },
+  { name: "Redis", category: "Cache" },
+  { name: "Docker", category: "Containers" },
+  { name: "Kubernetes", category: "Orchestration" },
+  { name: "Hugging Face", category: "ML Hub" },
+  { name: "GitHub", category: "Version Control" },
+  { name: "AWS", category: "Cloud Deployment" },
+  { name: "Prometheus", category: "Monitoring" },
 ];
 
 export function IntegrationsSection() {
@@ -48,12 +48,12 @@ export function IntegrationsSection() {
             <span className="w-8 h-px bg-foreground/30" />
           </span>
           <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-6">
-            Works with everything
+            Works with your
             <br />
-            you already use.
+            entire AI stack.
           </h2>
           <p className="text-xl text-muted-foreground">
-            200+ pre-built integrations. Connect your entire stack in minutes.
+            Integrate with popular AI models, databases, and deployment platforms seamlessly.
           </p>
         </div>
 

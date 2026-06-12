@@ -6,23 +6,23 @@ import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 const securityFeatures = [
   {
     icon: Shield,
-    title: "SOC 2 Type II",
-    description: "Independently audited security controls with continuous monitoring.",
+    title: "Open Source Auditable",
+    description: "Every line of code is publicly auditable. Security through transparency, not obscurity.",
   },
   {
     icon: Lock,
-    title: "End-to-end encryption",
-    description: "AES-256 encryption for data at rest and TLS 1.3 in transit.",
+    title: "Your data, your rules",
+    description: "Self-host on your infrastructure. Your AI data never leaves your control.",
   },
   {
     icon: Eye,
-    title: "Zero-trust architecture",
-    description: "Every request is authenticated and authorized. No exceptions.",
+    title: "No vendor lock-in",
+    description: "Proprietary models are no longer a requirement. Run on your choice of AI backends.",
   },
   {
     icon: FileCheck,
-    title: "GDPR & HIPAA",
-    description: "Full compliance with data protection and healthcare regulations.",
+    title: "Enterprise compliance",
+    description: "SOC 2, HIPAA, GDPR compliant deployments available for managed hosting.",
   },
 ];
 
@@ -56,16 +56,16 @@ export function SecuritySection() {
           >
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
               <span className="w-8 h-px bg-foreground/30" />
-              Security
+              Privacy & Trust
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
-              Trust is
+              Transparency
               <br />
-              non-negotiable.
+              by design.
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-              Enterprise-grade security isn&apos;t optional. It&apos;s built into every layer 
-              of our platform, from infrastructure to application.
+              Open source means you can audit everything. No hidden algorithms, no mystery data collection. 
+              You own your AI and your data.
             </p>
 
             {/* Certifications */}

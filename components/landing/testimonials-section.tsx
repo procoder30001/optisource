@@ -4,32 +4,32 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    quote: "OptiSource transformed our deployment pipeline. What used to take hours now happens in seconds.",
+    quote: "OptiSource's open source approach transformed how we build AI. We can inspect every line of code and contribute improvements back to the community.",
     author: "Sarah Chen",
-    role: "CTO",
+    role: "AI Lead",
     company: "Meridian Labs",
-    metric: "10x faster deployments",
+    metric: "10x dev velocity",
   },
   {
-    quote: "The developer experience is unmatched. Our team's productivity has never been higher.",
+    quote: "Being part of an open source community that's shaping AI development is incredible. OptiSource gives us control and flexibility we never had before.",
     author: "Marcus Webb",
-    role: "Engineering Lead",
+    role: "Machine Learning Engineer",
     company: "Flux Systems",
-    metric: "40% more features shipped",
+    metric: "5 PRs merged",
   },
   {
-    quote: "Finally, infrastructure that scales with our ambition. Zero downtime since we switched.",
+    quote: "The transparency is refreshing. We can fine-tune models, customize the platform, and deploy on our own infrastructure. Complete autonomy.",
     author: "Elena Rodriguez",
-    role: "VP Engineering",
+    role: "CTO",
     company: "Beacon AI",
-    metric: "99.99% uptime",
+    metric: "Self-hosted",
   },
   {
-    quote: "The integrations are seamless. We connected our entire stack in a single afternoon.",
+    quote: "Contributing to OptiSource while using it for production is amazing. The community support is phenomenal and growing every day.",
     author: "James Liu",
     role: "Founder",
     company: "Prism Analytics",
-    metric: "50+ integrations used",
+    metric: "500+ community members",
   },
 ];
 
@@ -56,7 +56,7 @@ export function TestimonialsSection() {
         {/* Section Label */}
         <div className="flex items-center gap-4 mb-16">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-            What people say
+            Community stories
           </span>
           <div className="flex-1 h-px bg-foreground/10" />
           <span className="font-mono text-xs text-muted-foreground">
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
         {/* Company Logos Marquee Label */}
         <div className="mt-24 pt-12 border-t border-foreground/10">
           <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-8 text-center">
-            Trusted by forward-thinking teams
+            Part of the ecosystem
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@ export function TestimonialsSection() {
         <div className="flex gap-16 items-center marquee">
           {[...Array(2)].map((_, setIdx) => (
             <div key={setIdx} className="flex gap-16 items-center shrink-0">
-              {["Meridian Labs", "Flux Systems", "Beacon AI", "Prism Analytics", "Nova Tech", "Quantum Corp", "Atlas Digital", "Vertex Labs"].map(
+              {["Meridian Labs", "Flux Systems", "Beacon AI", "Prism Analytics", "OpenAI Communities", "HuggingFace Partners", "Anthropic Ecosystem", "Google Collaborators"].map(
                 (company) => (
                   <span
                     key={`${setIdx}-${company}`}
