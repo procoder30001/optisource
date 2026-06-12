@@ -6,23 +6,23 @@ import { Copy, Check } from "lucide-react";
 const codeExamples = [
   {
     label: "Install",
-    code: `npm install @optimus/sdk
+    code: `npm install @optisource/sdk
 
 # or
-yarn add @optimus/sdk
-pnpm add @optimus/sdk`,
+yarn add @optisource/sdk
+pnpm add @optisource/sdk`,
   },
   {
     label: "Initialize",
-    code: `import { Optimus } from '@optimus/sdk'
+    code: `import { OptiSource } from '@optisource/sdk'
 
-const optimus = new Optimus({
-  apiKey: process.env.OPTIMUS_KEY
+const optisource = new OptiSource({
+  apiKey: process.env.OPTISOURCE_KEY
 })`,
   },
   {
     label: "Deploy",
-    code: `const app = await optimus.deploy({
+    code: `const app = await optisource.deploy({
   name: 'my-app',
   region: 'auto',
   scaling: {
