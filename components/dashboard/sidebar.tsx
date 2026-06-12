@@ -14,6 +14,9 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
+  Brain,
+  Code2,
+  Database,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -24,9 +27,24 @@ interface DashboardSidebarProps {
 
 const navItems = [
   {
-    label: 'Overview',
+    label: 'AI Hub',
     href: '/dashboard',
     icon: LayoutDashboard,
+  },
+  {
+    label: 'Playground',
+    href: '/dashboard/playground',
+    icon: Code2,
+  },
+  {
+    label: 'Fine-tune',
+    href: '/dashboard/finetune',
+    icon: Brain,
+  },
+  {
+    label: 'Vectors',
+    href: '/dashboard/vectors',
+    icon: Database,
   },
   {
     label: 'Models',
